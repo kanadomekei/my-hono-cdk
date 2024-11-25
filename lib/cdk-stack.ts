@@ -9,7 +9,7 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
 
     const fn = new NodejsFunction(this, 'lambda', {
-      entry: 'lambda/index.ts',  
+      entry: 'lambda/src/index.ts',  
       handler: 'handler', 
       runtime: lambda.Runtime.NODEJS_18_X,
     });
